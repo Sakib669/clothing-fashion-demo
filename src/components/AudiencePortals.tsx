@@ -31,13 +31,13 @@ export default function AudiencePortals() {
   ];
 
   return (
-    <section className="py-16 sm:py-24 bg-white">
+    <section className="py-12 sm:py-20 lg:py-24 bg-white">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           {portals.map((portal) => (
             <div
               key={portal.title}
-              className="group relative aspect-[3/4] sm:aspect-[4/5] rounded-3xl overflow-hidden bg-neutral-900 shadow-sm hover:shadow-xl transition-all duration-500"
+              className="group relative aspect-[4/5] sm:aspect-[4/5] rounded-2xl sm:rounded-3xl overflow-hidden bg-neutral-900 shadow-sm hover:shadow-xl transition-all duration-500"
             >
               <Image
                 src={portal.image}
@@ -51,12 +51,12 @@ export default function AudiencePortals() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
 
               {/* Content Overlay */}
-              <div className="absolute inset-x-6 sm:inset-x-8 bottom-6 sm:bottom-8 z-10 space-y-3">
+              <div className="absolute inset-x-5 sm:inset-x-8 bottom-5 sm:bottom-8 z-10 space-y-2.5 sm:space-y-3">
                 <div>
-                  <h3 className="text-2xl sm:text-3xl font-extrabold tracking-wider text-white uppercase drop-shadow-sm">
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold tracking-wider text-white uppercase drop-shadow-sm">
                     {portal.title}
                   </h3>
-                  <p className="text-xs text-neutral-300 font-medium line-clamp-1 mt-0.5">
+                  <p className="text-[11px] sm:text-xs text-neutral-300 font-medium line-clamp-1 mt-0.5">
                     {portal.description}
                   </p>
                 </div>
@@ -64,7 +64,7 @@ export default function AudiencePortals() {
                 <div>
                   <Link
                     href={portal.href}
-                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-white hover:bg-neutral-100 text-neutral-950 text-xs font-bold uppercase tracking-wider rounded-full shadow-md hover:scale-[1.02] active:scale-95 transition-all duration-200"
+                    className="inline-flex items-center gap-1.5 sm:gap-2 px-5 sm:px-6 py-2 sm:py-2.5 bg-white hover:bg-neutral-100 text-neutral-950 text-[11px] sm:text-xs font-bold uppercase tracking-wider rounded-full shadow-md hover:scale-[1.02] active:scale-95 transition-all duration-200"
                   >
                     <span>SHOP NOW</span>
                     <ArrowRight className="w-3.5 h-3.5" />

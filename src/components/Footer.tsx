@@ -44,7 +44,7 @@ export default function Footer() {
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="flex max-w-md items-center gap-2 pt-2">
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row max-w-md items-stretch sm:items-center gap-3 sm:gap-2 pt-2">
                 <input
                   type="email"
                   value={emailInput}
@@ -55,7 +55,7 @@ export default function Footer() {
                 />
                 <button
                   type="submit"
-                  className="px-7 py-3 bg-neutral-900 hover:bg-black text-white text-xs font-bold uppercase tracking-wider rounded-full shadow-md hover:scale-[1.02] active:scale-95 transition-all shrink-0"
+                  className="px-7 py-3 bg-neutral-900 hover:bg-black text-white text-xs font-bold uppercase tracking-wider rounded-full shadow-md hover:scale-[1.02] active:scale-95 transition-all shrink-0 text-center"
                 >
                   SUBMIT
                 </button>

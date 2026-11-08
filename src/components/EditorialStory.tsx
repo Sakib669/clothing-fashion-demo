@@ -46,9 +46,9 @@ export default function EditorialStory() {
             <div className="absolute inset-0 bg-black/15 transition-opacity group-hover:bg-black/25" />
 
             {/* Hand-drawn red script overlay matching reference ("Harfa Collections") */}
-            <div className="absolute top-8 left-8 select-none">
+            <div className="absolute top-5 left-5 sm:top-8 sm:left-8 select-none">
               <span
-                className="text-3xl sm:text-4xl lg:text-5xl font-serif italic font-extrabold text-[#DC2626] tracking-wide drop-shadow-md inline-block transform -rotate-3"
+                className="text-2xl sm:text-4xl lg:text-5xl font-serif italic font-extrabold text-[#DC2626] tracking-wide drop-shadow-md inline-block transform -rotate-3"
                 style={{
                   fontFamily: "Georgia, 'Playfair Display', serif",
                 }}
